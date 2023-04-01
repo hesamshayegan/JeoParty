@@ -1,0 +1,59 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c */
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-family: 'Ultra', serif;
+  font-size: 2em;
+  text-shadow: #FC0 5px 0 10px;
+}
+
+#jeopardy{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;  
+}
+
+th {
+  height: 4em;
+  width: 10em;
+  background-color: #115ff4;
+  font-family: 'Chilanka', cursive;
+  font-size: 1.25em;
+  color: white;
+  border: solid 2px black;
+  padding: 2px;
+
+}
+
+td {
+  height: 5em;
+  width: 10em;
+  font-family: 'Chilanka', cursive;
+  background-color: #115ff4;
+  border: solid 2px black;
+  color: white;
+  padding: 2px;
+  
+}
+
+#btn {
+  margin: auto;
+  height: 4em;
+  width: 8em;
+  padding: 5px;
+  border-radius: 5px;
+  background-color:#0a0a23;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  }
+
+
