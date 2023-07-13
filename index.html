@@ -5,14 +5,13 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jeopardy</title>
-  <link href="https://fonts.googleapis.com/css?family=Copse&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One&family=Chilanka&family=Ultra&display=swap" rel="stylesheet">
+  <title> Jeoparty </title>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="jeopardy.css">
 </head>
 <body>
-      <h1> Jeopardy Game </h1>
+      <h1> JEOPARTY </h1>
       <table id="jeopardy">
             <thead>
                   <tbody>
@@ -21,6 +20,20 @@
             </thead>
       </table>
 <button id="btn"> Restart </button>
+
+<div class="scoreboard">
+      <div class="team">
+      <h2>Team A Score: <span id="scoreTeamA">0</span></h2>
+      <button id="addScoreTeamA">+</button>
+      <button id="subtractScoreTeamA">-</button>
+      </div>
+
+      <div class="team">
+      <h2>Team B Score: <span id="scoreTeamB">0</span></h2>
+      <button id="addScoreTeamB">+</button>
+      <button id="subtractScoreTeamB">-</button>
+      </div>
+</div>
 
 <script src="https://unpkg.com/jquery"></script>
 <script src="https://unpkg.com/axios/dist/axios.js"></script>

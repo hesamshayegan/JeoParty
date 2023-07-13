@@ -1,16 +1,17 @@
-/* some colors you may find useful:
-  #115ff4
-  #060ce9
-  #28a200
-  #8d2ab5
-  #74119c */
+body {
+  height: 100%;
+  background-image: url("bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Forum', cursive;
+}
 
 h1 {
   text-align: center;
   margin: 10px;
-  font-family: 'Ultra', serif;
   font-size: 2em;
-  text-shadow: #FC0 5px 0 10px;
+  text-shadow: rgb(215, 252, 4) 5px 0 5px;
 }
 
 #jeopardy{
@@ -24,7 +25,6 @@ th {
   height: 4em;
   width: 10em;
   background-color: #115ff4;
-  font-family: 'Chilanka', cursive;
   font-size: 1.25em;
   color: white;
   border: solid 2px black;
@@ -35,7 +35,6 @@ th {
 td {
   height: 5em;
   width: 10em;
-  font-family: 'Chilanka', cursive;
   background-color: #115ff4;
   border: solid 2px black;
   color: white;
@@ -45,7 +44,7 @@ td {
 
 #btn {
   margin: auto;
-  height: 4em;
+  height: 3em;
   width: 8em;
   padding: 5px;
   border-radius: 5px;
@@ -54,6 +53,55 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;  
+  font-family: 'Forum', cursive;
+  font-size: 1rem;
   }
 
 
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.scoreboard .team h2 {
+  margin: 0;
+}
+
+.scoreboard .team button {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+#addScoreTeamA, #addScoreTeamB {
+  background-color: chartreuse;
+}
+
+#subtractScoreTeamA, #subtractScoreTeamB {
+  background-color: indianred;
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 0.8em;
+  }
+
+  #jeopardy {
+    flex-direction: column;
+  }
+
+  th, td {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  #btn {
+    font-size: 0.8rem;
+  }
+}
