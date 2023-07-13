@@ -1,4 +1,4 @@
-const BASE_URL = "http://jservice.io/api"
+const BASE_URL = "https://jservice.io/api"
 // number of categories
 const NUM_CAT = 6;
 // number of questions per each category
