@@ -50,19 +50,19 @@ async function fillTable() {
     }
     $('#jeopardy thead').append($tr)
     
-    let randomNumbers = [100, 200, 400, 600, 800, 1000];
+    let scores = [200, 400, 600, 800, 1000];
     $("#jeopardy tbody").empty(); 
     for (let j = 0; j < NUM_Q; j++ ) {
         
         let $tr = $('<tr>');
             for (let i = 0; i < NUM_CAT; i++) {
-                randomNumbers.sort(() => Math.random() - 0.5);
-                let randomNum = randomNumbers[i];
-                $tr.append($('<td>').attr("id", `${i}-${j}`).text(randomNum));
+                let score = scores[j];
+                $tr.append($('<td>').attr("id", `${i}-${j}`).text('$'+score));
             }
             $('#jeopardy thead').append($tr)
     }
 }
+  
 
 
 
@@ -71,12 +71,14 @@ function handleClick(evt) {
     let id = evt.target.id;
     let [catId, clueId] = id.split("-");
     let clue = categories[catId].clues[clueId];
-    let randomNum = parseInt($(evt.target).text());
+    let scoreNum = parseInt($(evt.target).text().substring(1));
     
-    lastClickedNumTeamA = randomNum ;
-    lastClickedNumTeamB = randomNum;
-    console.log('lastClickedNumTeamA', lastClickedNumTeamA)
-    console.log('lastClickedNumTeamB', lastClickedNumTeamB)
+    console.log('scoreNum', scoreNum)
+
+    lastClickedNumTeamA = scoreNum ;
+    lastClickedNumTeamB = scoreNum;
+    
+    
 
 
     if (clue === undefined) {
