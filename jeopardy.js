@@ -75,7 +75,10 @@ function handleClick(evt) {
     
     lastClickedNumTeamA = randomNum ;
     lastClickedNumTeamB = randomNum;
-    
+    console.log('lastClickedNumTeamA', lastClickedNumTeamA)
+    console.log('lastClickedNumTeamB', lastClickedNumTeamB)
+
+
     if (clue === undefined) {
         $(`#${catId}-${clueId}`).html(
             "No information"
