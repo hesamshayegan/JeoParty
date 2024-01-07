@@ -1,4 +1,7 @@
-const BASE_URL = "https://jservice.io/api"
+// const BASE_URL = "https://jservice.io/api"
+
+// This is the backup API as the main api is down at the moment!
+const BASE_URL = "https://rithm-jeopardy.herokuapp.com/api"
 // number of categories
 const NUM_CAT = 6;
 // number of questions per each category
